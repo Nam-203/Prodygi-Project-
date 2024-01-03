@@ -1,0 +1,81 @@
+.ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: var(--primaryColor) !important;
+}
+.ant-checkbox-checked:after {
+  border: none !important;
+}
+.ant-checkbox-inner {
+  border: 1px solid #bfbfbf !important;
+}
+
+.show-cart .modal-overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  z-index: 95;
+}
+.mainCart {
+  &::-webkit-scrollbar {
+    width: 0px;
+    width: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondaryColor),
+      var(--secondaryColor),
+      var(--secondaryColor)
+    );
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+.field.field-plus-minus button:first-child {
+  border-right-width: 0;
+}
+.field.field-plus-minus button:last-child {
+  border-left-width: 0;
+}
+
+.field.field-plus-minus button {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  align-items: center;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-color: rgba(97, 88, 78, 0.5019607843);
+  border-width: 1px;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  height: 2rem;
+  justify-content: center;
+  text-align: center;
+  width: 2rem;
+}
+.field.field-plus-minus input {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-color: rgba(97, 88, 78, 0.5019607843);
+  border-radius: 0;
+  border-width: 1px 0;
+  font-size: 1rem;
+  height: 2rem;
+  text-align: center;
+  width: 3rem;
+}
